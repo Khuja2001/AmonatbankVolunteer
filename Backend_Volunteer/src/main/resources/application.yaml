@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url:  jdbc:postgresql://localhost:5432/amonatbankVolunteer
+    username: khuja
+    password: 1234
+
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8082
+
