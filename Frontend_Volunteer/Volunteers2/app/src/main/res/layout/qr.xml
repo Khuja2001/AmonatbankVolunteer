@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarQR"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:navigationIcon="@drawable/back_white"
+                app:titleTextColor="@color/amonatColor"
+                app:title="QR - код"/>
+
+            <EditText
+                android:id="@+id/editTextPointName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="name"
+                android:hint="Название точки"
+                android:textSize="22sp"
+                android:padding="12dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor" />
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="editTextFatherName"
+                android:hint="Адрес"
+                android:textSize="22sp"
+                android:padding="12dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor" />
+
+            <EditText
+                android:id="@+id/editTextTin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="surname"
+                android:hint="ИНН"
+                android:textSize="22sp"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor" />
+
+            <EditText
+                android:id="@+id/editTextRYAM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="surname"
+                android:hint="РЯМ"
+                android:textSize="22sp"
+                android:padding="12dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor" />
+
+            <EditText
+                android:id="@+id/editTextQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="editTextPhoneNumber"
+                android:hint="Цитирование"
+                android:textSize="22sp"
+                android:padding="12dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor" />
+
+            <EditText
+                android:id="@+id/editTextDirectorPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="editTextEmail"
+                android:hint="Номер телефона руководителя"
+                android:textSize="22sp"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor" />
+
+            <EditText
+                android:id="@+id/editTextAccountantPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="editTextEmail"
+                android:hint="Номер телефона главбуха"
+                android:textSize="22sp"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/qrButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:textColor="@color/amonatColor"
+                android:text="   Зарегистрироваться   "
+                android:layout_marginBottom="20dp"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

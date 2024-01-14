@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarMobile"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/back_white"
+            app:title="Амонат Мобайл"
+            app:titleTextColor="@color/amonatColor" />
+
+
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:autofillHints="name"
+            android:hint="@string/editTextFirstName"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/amonatColor"
+            android:textColorHint="@color/amonatColor"/>
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:autofillHints="surname"
+            android:hint="@string/editTextLastName"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/amonatColor"
+            android:textColorHint="@color/amonatColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fatherName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="name"
+                android:hint="@string/fatherNameSMS"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxNoPatronymic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noPatronymic"
+                android:textColor="@color/amonatColor"/>
+        </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonMale"
+            android:textColor="@color/amonatColor"
+            android:textColorHint="@color/amonatColor" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/radioButtonFemale"
+            android:textColor="@color/amonatColor"
+            android:textColorHint="@color/amonatColor" />
+    </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:autofillHints="editTextPhoneNumber"
+            android:hint="@string/editTextPhoneNumber"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColor="@color/amonatColor"
+            android:textColorHint="@color/amonatColor" />
+
+        <EditText
+            android:id="@+id/editTextINN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:autofillHints="editTextPhoneNumber"
+            android:hint="@string/INN"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="@color/amonatColor"
+            android:textColorHint="@color/amonatColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:autofillHints="editTextEmail"
+            android:hint="@string/editTextEmail"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/amonatColor"
+            android:textColorHint="@color/amonatColor" />
+        <CheckBox
+            android:id="@+id/checkBoxNoEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noEmail"
+            android:textColor="@color/amonatColor"/>
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:autofillHints="dateEditText"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="@string/dateEditText"
+            android:inputType="date"
+            android:padding="12dp"
+            android:textColor="@color/amonatColor"
+            android:textColorHint="@color/amonatColor"
+            tools:ignore="KeyboardInaccessibleWidget" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regInAmonatMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="  Зарегистрироваться  "
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:textColor="@color/amonatColor"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

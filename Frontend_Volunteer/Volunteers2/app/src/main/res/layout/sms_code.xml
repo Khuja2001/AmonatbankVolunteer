@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#009b47"
+    android:layout_height="match_parent" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/amonatColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/back_green"
+        app:titleTextColor="@color/amonatColor" />
+
+    <TextView
+        android:id="@+id/enter_4_digit_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:gravity="left"
+        android:textFontWeight="1"
+        android:fontFamily="@font/timesnewromanbold"
+        android:text="Введите 4-значный код для подтверждение аккаунта"
+        android:textSize="26sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent" >
+    </TextView>
+    <TextView
+        android:id="@+id/sentSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мы отправили SMS-код для входа\nв Амонат на номер +992 98 882 11 07"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/timesnewroman"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/enter_4_digit_code"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent" >
+    </TextView>
+    <TextView
+        android:id="@+id/enterSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:textFontWeight="1"
+        android:fontFamily="@font/timesnewromanbold"
+        android:text="Введите SMS-код"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/sentSms"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp" >
+    </TextView>
+
+
+    <!-- 4 EditText для ввода цифр из СМС -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:hint="X"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/enterSms"
+        android:layout_marginTop="16dp"
+        android:maxLength="1"
+        android:textColor="#000000"
+        android:background="@drawable/edit_sms_code"
+        android:inputType="number"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:hint="X"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/editText1"
+        app:layout_constraintEnd_toStartOf="@id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/enterSms"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:maxLength="1"
+        android:inputType="number"
+        android:background="@drawable/edit_sms_code"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:hint="X"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/editText2"
+        app:layout_constraintEnd_toStartOf="@id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/enterSms"
+        android:layout_marginTop="16dp"
+        android:maxLength="1"
+        android:inputType="number"
+        android:background="@drawable/edit_sms_code"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:hint="X"
+        android:textSize="30sp"
+        android:maxLength="1"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterSms"
+        android:background="@drawable/edit_sms_code"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+    <TextView
+        android:id="@+id/countDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/timesnewroman"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editText4"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/newCodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить новый SMS-код"
+        android:textColor="#FFFFFF"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="newCodeButtonClick"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

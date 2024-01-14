@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/semi_oval"
+        android:paddingBottom="20dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/amonat"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Волонтёр Амонатбонка"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/timesnewromanbold"
+            android:gravity="center" >
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.32"
+        android:background="@color/white"
+        android:src="@drawable/volunteer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/timesnewromanbold"
+        android:text="Это приложение предназначено для волонтёров Амонатбонка. С помощью этой приложении они смогут зарегистрировать пользователей.\nМожно получить логин и пароль только в Амонатбонке"
+        android:textSize="18sp"
+        android:background="@color/white"
+        android:textColor="@color/amonatColor"
+        android:layout_weight="0.32">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/dev_name"
+        android:textColor="#2E7D32"
+        android:textSize="14sp">
+    </TextView>
+</LinearLayout>

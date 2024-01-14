@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageButton
+                android:id="@+id/profileImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="@string/profileImageView"
+                android:src="@drawable/default_profile_image" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:textColor="@color/amonatColor"
+                android:text="  Загрузить фото  "
+                android:textSize="24sp"/>
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Фото 1-й страницы паспорта "
+                    android:textColor="@color/amonatColor"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp">
+                </TextView>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/image_1"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_border_matt"
+                    android:contentDescription="Фото паспорта спереди должно быть четким">
+                </androidx.appcompat.widget.AppCompatImageButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/linear1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Фото 2-й страницы паспорта"
+                    android:textColor="@color/amonatColor"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp">
+                </TextView>
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/image_2"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_border_matt"
+                    android:contentDescription="Фото паспорта сзади должно быть четким">
+                </androidx.appcompat.widget.AppCompatImageButton>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/linear1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Фото селфи с паспортом"
+                    android:textColor="@color/amonatColor"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp">
+                </TextView>
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/image_3"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_border_matt"
+                    android:contentDescription="Фото паспорта сзади должно быть четким">
+                </androidx.appcompat.widget.AppCompatImageButton>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button"
+                android:textColor="@color/amonatColor"
+                android:text="Готово"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

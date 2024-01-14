@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_new_passport"
+        android:title="Новый (пластиковый)" />
+    <item
+        android:id="@+id/menu_old_passport"
+        android:title="Старый (бумажный)" />
+</menu>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name" translatable="false">Volunteer\'s</string>
+    <string name="dev_name" translatable="false">Developed by KHUJA</string>
+    <string name="infoButton" translatable="false">Инфо</string>
+    <string name="inButton" translatable="false">Войти</string>
+    <string name="welcome" translatable="false">Добро пожаловать в\nВолонтёрАмонат</string>
+    <string name="label" translatable="false">Введите логин и пароль,\nчтобы войти</string>
+    <string name="profile_image" translatable="false">Фото профиля</string>
+    <string name="profileImageView" translatable="false">Загружайте квадратное фото</string>
+    <string name="uploadButton" translatable="false">Загрузить фото</string>
+    <string name="editTextFirstName" translatable="false">Имя</string>
+    <string name="editTextLastName" translatable="false">Фамилия</string>
+    <string name="editTextFatherName" translatable="false">Отчество (необязательно)</string>
+    <string name="radioButtonMale" translatable="false">Мужской</string>
+    <string name="radioButtonFemale" translatable="false">Женский</string>
+    <string name="editTextPhoneNumber" translatable="false">Номер телефона</string>
+    <string name="editTextEmail" translatable="false">Email (необязательно)</string>
+    <string name="dateEditText" translatable="false">Дата рождения</string>
+    <string name="regInAmonatMobile" translatable="false">Зарегистрироваться</string>
+    <string name="phoneNumberSMS" translatable="false">Ваш номер</string>
+    <string name="lastFourDigits" translatable="false">4 последние цифры карты</string>
+    <string name="surnameSMS" translatable="false">Фамилия</string>
+    <string name="nameSMS" translatable="false">Имя</string>
+    <string name="fatherNameSMS" translatable="false">Отчество</string>
+    <string name="commentsSMS" translatable="false">Комментарии</string>
+    <string name="regSMSCode" translatable="false">Зарегистрироваться</string>
+    <string name="passportType" translatable="false">Выбрать тип паспорта</string>
+    <string name="noEmail" translatable="false">Нет почты</string>
+    <string name="noPatronymic" translatable="false">Нет отчества</string>
+    <string name="INN" translatable="false">ИНН</string>
+    <string name="doYouWantExit" translatable="false">Точно хотите выйти, не дождавшись SMS-кода?</string>
+    <string name="enableSMSNotification">Подключить</string>
+</resources>

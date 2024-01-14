@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarSMS"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:navigationIcon="@drawable/back_white"
+                app:titleTextColor="@color/amonatColor"
+                app:title="SMS-уведомления"/>
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="name"
+                android:hint="@string/phoneNumberSMS"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor" />
+
+            <EditText
+                android:id="@+id/lastFourDigits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="password"
+                android:hint="@string/lastFourDigits"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor" />
+            <EditText
+                android:id="@+id/surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="name"
+                android:hint="@string/surnameSMS"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="surname"
+                android:hint="@string/nameSMS"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/patronymic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="patronymic"
+                android:hint="@string/fatherNameSMS"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="password"
+                android:hint="@string/commentsSMS"
+                android:padding="15dp"
+                android:textColor="@color/amonatColor"
+                android:textColorHint="@color/amonatColor"
+                android:textSize="20sp" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activeSMSNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:textColor="@color/amonatColor"
+                android:text="   Подключить   "
+                android:layout_marginBottom="20dp"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

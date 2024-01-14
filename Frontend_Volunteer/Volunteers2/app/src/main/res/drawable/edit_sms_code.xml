@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#F0F0F0" />
+            <corners android:radius="0dp" /> <!-- Полукруглые углы -->
+            <stroke
+                android:width="5dp"
+                android:color="#009b47" /> <!-- Зеленая граница -->
+        </shape>
+    </item>
+</layer-list>

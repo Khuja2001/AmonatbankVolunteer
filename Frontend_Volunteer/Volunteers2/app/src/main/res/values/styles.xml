@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="commonStyle" parent="Base.Theme.Volunteers">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+<style name="mainStyle" parent="Base.Theme.Volunteers">
+    <item name="android:statusBarColor">@color/amonatColor</item>
+    <item name="android:navigationBarColor">@color/white</item>
+</style>
+</resources>

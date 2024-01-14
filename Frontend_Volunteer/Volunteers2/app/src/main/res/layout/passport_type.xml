@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#009b47">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/amonat"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Волонтёр Амонатбонка"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/timesnewromanbold"
+            android:gravity="center" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearButtons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Клиент зарегистрирован.\nТеперь необходимо выбрать тип паспорта и загрузить фотографии"
+            android:textSize="24sp"
+            android:textColor="@color/amonatColor"
+            android:fontFamily="@font/timesnewromanbold"
+            android:gravity="center" >
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/plasticType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="  Пластиковый (новый)  "
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/button"
+            android:textColor="@color/amonatColor"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/paperType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="  Бумажный (старый)  "
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/button"
+            android:textColor="@color/amonatColor"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/dev_name"
+        android:textColor="#2E7D32"
+        android:textSize="14sp">
+    </TextView>
+</LinearLayout>
