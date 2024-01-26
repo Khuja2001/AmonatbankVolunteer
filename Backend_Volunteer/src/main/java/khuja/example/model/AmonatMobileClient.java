@@ -23,8 +23,8 @@ public class AmonatMobileClient {
     @Column(name = "patronymic_amonat_mobile_client")
     public String patronymicAmonatMobileClient;
 
-    @Column(name = "sex_amonat_mobile_client", nullable = false)
-    public String sexAmonatMobileClient;
+    @Column(name = "gender_amonat_mobile_client", nullable = false)
+    public String genderAmonatMobileClient;
 
     @Column(name = "phone_amonat_mobile_client", nullable = false)
     public String phoneAmonatMobileClient;
@@ -80,12 +80,12 @@ public class AmonatMobileClient {
         this.patronymicAmonatMobileClient = patronymicAmonatMobileClient;
     }
 
-    public String getSexAmonatMobileClient() {
-        return sexAmonatMobileClient;
+    public String getGenderAmonatMobileClient() {
+        return genderAmonatMobileClient;
     }
 
-    public void setSexAmonatMobileClient(String sexAmonatMobileClient) {
-        this.sexAmonatMobileClient = sexAmonatMobileClient;
+    public void setGenderAmonatMobileClient(String genderAmonatMobileClient) {
+        this.genderAmonatMobileClient = genderAmonatMobileClient;
     }
 
     public String getPhoneAmonatMobileClient() {

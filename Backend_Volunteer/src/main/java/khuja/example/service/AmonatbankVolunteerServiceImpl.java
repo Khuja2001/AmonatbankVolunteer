@@ -7,8 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.stereotype.Service;
 
-
-
 import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
@@ -48,18 +46,6 @@ public class AmonatbankVolunteerServiceImpl implements AmonatbankVolunteerServic
     @Override
     public void createSmsNotificationsClient(SmsNotificationsClient smsNotificationsClient) {
         amonatbankVolunteerDao.createSmsNotificationsClient(smsNotificationsClient);
-    }
-
-    @Transactional
-    @Override
-    public void createVolunteers(Volunteers volunteers) {
-        amonatbankVolunteerDao.createVolunteers(volunteers);
-    }
-
-    @Transactional
-    @Override
-    public String findByLoginVolunteer(String login) {
-            return amonatbankVolunteerDao.findByLoginVolunteer(login);
     }
 
 

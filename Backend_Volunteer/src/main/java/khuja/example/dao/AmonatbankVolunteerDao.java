@@ -9,8 +9,6 @@ public interface AmonatbankVolunteerDao {
     void createPosClient(PosClient posClient);
     void createQrClient(QrClient qrClient);
     void createSmsNotificationsClient(SmsNotificationsClient smsNotificationsClient);
-    void createVolunteers(Volunteers volunteers);
-    String findByLoginVolunteer(String login);
     void uploadPhoto(Photo photo);
 
 }

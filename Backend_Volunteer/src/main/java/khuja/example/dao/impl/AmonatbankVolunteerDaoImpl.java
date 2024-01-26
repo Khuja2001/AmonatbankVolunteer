@@ -41,24 +41,6 @@ public class AmonatbankVolunteerDaoImpl implements AmonatbankVolunteerDao {
     }
 
     @Override
-    public void createVolunteers(Volunteers volunteers) {
-        entityManager.persist(volunteers);
-    }
-
-    @Override
-    public String findByLoginVolunteer(String login) {
-        TypedQuery<String> query = entityManager.createQuery(
-                "SELECT v.password FROM Volunteers v WHERE v.login = :login", String.class);
-        query.setParameter("login", login);
-
-        try {
-            return query.getSingleResult();
-        } catch (NoResultException e) {
-            return "Not found!";
-        }
-    }
-
-    @Override
     public void uploadPhoto(Photo photo) {
         entityManager.persist(photo);
     }

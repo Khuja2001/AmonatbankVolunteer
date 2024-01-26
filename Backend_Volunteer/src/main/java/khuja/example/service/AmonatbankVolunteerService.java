@@ -11,8 +11,6 @@ public interface AmonatbankVolunteerService {
     void createPosClient(PosClient posClient);
     void createQrClient(QrClient qrClient);
     void createSmsNotificationsClient(SmsNotificationsClient smsNotificationsClient);
-    void createVolunteers(Volunteers volunteers);
-    String findByLoginVolunteer(String login);
     void uploadPhoto(MultipartFile file, int idAmonatMobileClient, int type);
 
 }
